@@ -1,0 +1,207 @@
+/* WenChing Li */
+body {
+  font-family: "Trykker";
+  background: #FF;
+  color: #333;
+  margin: 0px;
+  padding: 0px;
+}
+
+#header {
+/*for gradient background*/
+background: #3d3d3d; /* Old browsers */
+background: -moz-linear-gradient(top,  #3d3d3d 0%, #2b2b2b 19%, #000000 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3d3d3d), color-stop(19%,#2b2b2b), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #3d3d3d 0%,#2b2b2b 19%,#000000 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #3d3d3d 0%,#2b2b2b 19%,#000000 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #3d3d3d 0%,#2b2b2b 19%,#000000 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #3d3d3d 0%,#2b2b2b 19%,#000000 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d3d3d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+;
+  margin-top:0;
+  height:120px;
+}
+#header h1 {
+  font-family: "Shanti";
+  color: #FFF;
+  margin-top: 0;
+  font-size:10px;
+  letter-spacing: 1px;
+  margin-left:17.7%;
+}
+
+#header h1 img{
+    margin-left:5%;
+}
+
+span.header_container{
+  width:95%;
+  margin:0 auto 0 auto;
+  position:relative;
+  float:left;
+}
+
+.logo{
+  width:8%;
+  height:72%;
+  position:relative;
+  float:left;
+  margin:0 auto 0 17.7%;
+}
+#header .cart-info {
+  position: absolute;
+  right: 0px;
+  text-align: right;
+  padding: 10px;
+  background: #FFFFFF;
+  color: #00A6BD;
+  font-size: 12px;
+}
+img {
+  border: 0;
+}
+div#productlistview.viewport{
+  width:75%;
+  margin:0 auto 0 auto;
+}
+.viewport{
+  margin-top:-12%;
+}
+.viewport .item-info{
+width:46%;
+float:left;
+margin:2% 0%;
+height:inherit;
+text-align:left;
+}
+#productlistview ul {
+    list-style: none;
+}
+
+.item {
+  float:left;
+  width:200px;/*requirement!*/
+  height:350px;
+  margin:10px 10px 10px 10px;/*requirement!*/
+  padding: 10px;
+  font-size: 12px;
+  border:#f3f3f3 1px solid;
+}
+.item img
+{
+text-align:center;
+}
+
+/*for on top of other pic, to
+relative and absolute*/
+.p_sale
+{
+top:10%;
+left:20%;
+}
+
+.item-name {
+  font-weight:normal;
+  text-align: left;
+  padding-left:5%;
+  height:19%;
+}
+.item-brand{
+ margin-left:5%;
+}
+.item-brand {
+  font-weight: bold;
+  font-size: 13px;
+  color:#a8c9d3;
+  text-align: left;
+}
+.item-info .item-brand{
+ margin-left:0;
+}
+
+.item-info{
+  width:42%;
+  float:left;
+  margin:2%;
+  height:inherit;
+  text-align:left;
+}
+
+
+.item-info .item-name{
+  padding-left:0;
+}
+.item-info .item-price{
+  text-align:left;
+}
+
+.item-detail .item-img  {
+  float:left;
+  width:50%;
+  margin-top:2%;
+
+}
+.item-img{
+  border-bottom:#a8c9d3 1px solid;
+  padding-bottom:6px;
+  text-align:center;
+  top: 0; left: 0;
+  position:relative;
+}
+
+.shopping_cart{
+  margin-top:12%;
+}
+.item-price{
+float:left;
+width:100%;
+border-bottom:#a8c9d3 1px solid;
+text-align:center;
+}
+.item-cart{
+  width:5%;
+  float:left;
+}
+/*for red ling-though word*/
+.outer_listPrice{
+  text-decoration: line-through;
+  color:red;
+  width:39%;
+  float:left;
+  margin-left:5%;
+  margin-right:14%;
+}
+
+.listPrice{
+  color:black;
+}
+
+.salePrice{
+  color:red;
+}
+
+.item-editorsPick{
+margin-top:-1.6%;
+text-align:right;
+padding-bottom:4px;
+position:absolute;
+width: 14%;
+}
+
+.item-on-sale{
+position: absolute;
+top:0;
+right:0;
+}
+
+.search_bar{
+  position:relative;
+  width:25%;
+  margin:3% auto 0 8%;
+  float:left;
+}
+
+.uq{
+  margin:2% 0%;
+
+}
