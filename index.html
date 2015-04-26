@@ -1,0 +1,168 @@
+<!-- WenChing Li-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Port51 </title>
+  <link rel="stylesheet" href="css/jsonstore.css" type="text/css">
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+  <!--landing page-->
+  <script id="store_index_template" type="text/x-underscore-tmplate"> 
+  <ul>
+  <% for(i=0,l=products.length;i<l;++i) { p = products[i]; %>
+    <li class="item">
+    <div class="b_sm_images">
+    <div class="item-img">
+    <a href="#item/<%= p.id %>">
+    <img class="p_image"alt="<%= p.name %>" src="<%= p.img %>" />
+    <% if (p.sale  ==true) { %>
+
+     <img class="item-on-sale"src="images/icon_sale.png" />
+
+     <% } %>
+     </div>
+
+     </a>
+     <div class="item-editorsPick">
+     <% if (p.editorsPick) { %>
+      <a href="#item/<%= p.editorsPick %>">
+      <img src="images/icon_editor.png" />
+      </a>
+      <% } %>
+
+      </div>
+
+      </div><!-- end of thumbnail+editorsPick images-->
+
+
+      <div class="item-brand"><%= p.brand %></div>
+      <div class="item-name"><%= p.name %></div>
+      <div class="item-price"> 
+      <% if (p.sale  ==false) { %>
+       <div class="not_on_sale_group">
+       <div class="listPrice_1">USD <%= p.price %></div></div>
+       </div>
+       <% } %>
+
+       <% if (p.sale  ==true) { %>
+        <div id="on_sale_group">   
+        <div class="outer_listPrice">
+        <div class="listPrice">USD <%= p.price %></div>
+        </div> 
+<!--****end if outer_listPrice****-->
+
+        <div class="salePrice">USD <%= p.salePrice %></div>
+        <% } %></div>
+        </div> 
+<!--****end of sale_group****-->
+        </li>
+        <% } %>
+        </ul>
+        </script>
+        <p>
+          <script id="store_item_template" type="text/x-underscore-template">
+          <div class="item-detail">
+          <div class="item-img">
+          <img alt="<%= name %>" src="<%= img %>" />
+          </div>
+          </div>
+          <div class="item-info">
+          <div class="item-brand"><%= brand %></div>
+          <div class="item-name"><%= name %></div>
+          <div class="item-price"> 
+          <% if (sale  ==false) { %>
+           <div class="not_on_sale_group">
+           <div class="listPrice">USD <%= price %></div>
+           </div></div>
+           <% } %>
+
+           <% if (sale) { %>
+            <div id="on_sale_group">   
+            <!--end if outer_listPrice-->
+            <div class="salePrice">USD <%= salePrice %></div><% } %>
+
+            </div> 
+
+            </div>
+            <form class="shopping_cart"action="#/cart" method="post">
+            <p>
+            <label>Quantity:</label>
+            <input class="uqf" name="quantity" size="2" type="text" value="0" />
+            </p>
+            <p>
+            <input class="uq" type="submit" value="Add to Cart" />
+            <div class="item-cart">
+            <!--Bootstrap version:3-->
+            <span class="glyphicon glyphicon-shopping-cart"></span>
+            </div>
+            </p>
+            </form>
+            <div class="item-link">
+            <a href="<%= brand_link %>">Buy this item on <%= merchant %></a>
+            </div>
+            <div class="item-cart">
+            <span class="glyphicon glyphicon-arrow-left"></span>
+            </div>
+            <div class="back-link">
+            <a href="#">Back to Items</a>
+            </div>
+            </div>
+            </script>
+            <script id="store_cart_template" type="text/x-underscore-template">
+            <p>Items: <%= count %> ($<%= cost %>)</p>
+            </script>
+          </p>
+        </head>
+
+        <body>
+          <div id="container">
+            <div id="header">
+              <span class="header_container">
+
+               <h1>
+                 THE WORLD'S BEST STORES DELIVERED DIRECTLY TO YOU
+               </h1>
+               <div class="logo"><img src="images/logo.png"/></div> 
+               <!--**** Search Bar****-->     
+               <div class="search_bar">
+                <form class="form-search">
+                  <div class="input-append">
+                    <input type="text" class="span2 search-query"placeholder="Search for Products">
+                    <button type="submit" class="search-icon" title="search" >Search</button>
+                  </div>
+
+                </form>
+
+              </div>
+              <div class="cart-info">
+              </div>
+
+
+              <!--****shipping methods****-->
+
+              // <script id="shipping_index_template" type="text/x-underscore-tmplate">
+              // <ul>
+              // <% for(i=0,l=products.length;i<l;++i) { p = cart[i]; %>
+              //   <li class="shipping_methods">
+              //   <div class="item-grand"><input type="checkbox" name="grand" value="Car"> <input type="checkbox" name="vehicle" value="" > </div>
+              //   <div class="item-3day"><input type="checkbox" name="3day" value="Car"> <input type="checkbox" name="vehicle" value="" > <%= p.brand %></div>
+              //   <div class="item-2day"><input type="checkbox" name="2day" value=""> <%= p.name %></div>
+              //   <div class="item-night"><input type="checkbox" name="onight" value=""> <%=></div>
+              //   </li>
+              //   <% } %>
+              //   </ul></script>
+
+              </span>
+            </div>
+
+            <div id="main"> </div>
+          </div>
+          <!--for search bar-->
+          <script src="https://raw.github.com/jiren/filter.js/master/filter.js" type="text/javascript"></script>
+          <script src="js/jquery-1.6.2.min.js" type="text/javascript"></script>
+          <script src="js/underscore.js" type="text/javascript"></script>
+          <script src="js/backbone.js" type="text/javascript"></script>
+          <script src="js/store.js" type="text/javascript"></script>
+        </body>
+        </html>
