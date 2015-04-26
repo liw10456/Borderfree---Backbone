@@ -1,0 +1,113 @@
+[
+
+  {
+    "id": "p1",
+    "name": "MARC by Marc Jacobs 'Elise' Colorblock Sweater Dress",
+    "brand": "Marc Jacobs",
+    "img": "http://images1.urlstatic.com/port51/products/0/8/1/small/983180.jpg",
+    "merchant":"Nordstrom",
+    "price": "278.00",
+    "salePrice" : "164.02",
+    "editorsPick" : false, 
+    "sale": true,
+    "url": "/",
+    "brand_link":"http://shop.nordstrom.com/"
+
+  },
+  {
+    "id": "p2",
+    "name": "Alice + Olivia Maxi Dress - Genie Sweetheart Cutout",
+    "brand": "Alice + Olivia",
+    "img": "http://images2.urlstatic.com/port51/products/4/4/2/small/1341244.jpg",
+    "merchant":"Bloomingdales",
+    "price": "698.00",
+    "salePrice" : "488.60",
+    "editorsPick" : false,
+    "sale" : true,
+    "url": "/",
+    "brand_link":"http://www.bloomingdales.com/"
+  },
+
+    {
+    "id": "p3",
+    "name": "Eliza J Print Chiffon Halter Maxi Dress",
+    "brand": "Eliza J",
+    "img": "http://images2.urlstatic.com/port51/products/4/5/8/small/1119854.jpg",
+    "merchant":"Nordstrom",
+    "price": "158.00",
+    "salePrice" : "0.00",
+    "editorsPick" : true,
+    "sale" : false,
+    "url": "/",
+    "brand_link":"http://shop.nordstrom.com/"
+  },
+  {
+    "id": "p4",
+    "name": "French Connection Dress, Short-Sleeve High-Neck Eyelet",
+    "brand": "French Connection",
+    "img": "http://images1.urlstatic.com/port51/products/0/4/4/small/1006440.jpg",
+    "merchant":"Macy's",
+    "price":"198.00",
+    "salePrice" : "149.99",
+    "editorsPick" : true,
+    "sale" : true,
+    "url": "/",
+    "brand_link":"http://www.macys.com/"
+  },
+
+  {
+    "id": "p5",
+    "name": "Convertible Sundress - Regular",
+    "brand": "Garnet Hill",
+    "img": "http://images1.urlstatic.com/port51/products/9/9/7/small/1262799.jpg",
+    "merchant":"Garnet Hill",
+    "price": "138.00",
+    "salePrice" : "99.00",
+    "editorsPick" : false,
+    "sale" : true,
+    "url": "/",
+    "brand_link":"http://www.garnethill.com/"
+  },
+
+  {
+    "id": "p6",
+    "name": "Perry Ellis Cotton Stripe Vest",
+    "brand": "Perry Ellis",
+    "img": "http://images2.urlstatic.com/port51/products/1/4/2/small/1396241.jpg",
+    "merchant":"Neiman Marcus",
+    "price": "79.50",
+    "salePrice" : "0.00",
+    "editorsPick" : false,
+    "sale" : false,
+    "url": "/",
+    "brand_link":"http://www.neimanmarcus.com/"
+  },
+    {
+    "id": "p7",
+    "name": "Medium Stanthorpe Shoulder Bag",
+    "brand": "Neiman Marcus",
+    "img": "http://images1.urlstatic.com/port51/products/0/0/7/small/1376700.jpg",
+    "merchant":"Perry Ellis",
+    "price": "398.00",
+    "salePrice" : "266.00",
+    "editorsPick" : false,
+    "sale" : true,
+    "url": "/",
+    "brand_link":"http://www.perryellis.com/"
+  },
+      {
+    "id": "p8",
+    "name": "Robert Talbott Linen Sportcoat",
+    "brand": "Robert Talbott",
+    "img": "http://images3.urlstatic.com/port51/products/8/1/8/small/1357818.jpg",
+    "merchant":"Perry Ellis",
+    "price": "495.00",
+    "salePrice" : "247.49",
+    "editorsPick" : false,
+    "sale" : true,
+    "url": "/",
+    "brand_link":"http://www.perryellis.com/"
+  }
+
+
+]
